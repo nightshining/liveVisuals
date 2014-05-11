@@ -51,24 +51,34 @@ class testApp : public ofBaseApp{
     ofPoint barsMove;
     float barsCounter, barsNoise;
     
-    //spiral
+    //spiral//
     void drawSpiral();
     float counterSpiral, rotateSpiral, sineSpiral; 
     bool spiralOn;
     
-    //triangles
+    //triangles//
     void drawTri(int moveL, int moveR);
     bool triOn;
     float rotateTri, rotateTri2;
     ofPoint triPos;
     
-    //circles
+    //circles//
     void drawCir();
     int cirAlpha, cirRotate;
     bool cirOn;
     
-    //squares
+    //squares//
     void drawSquares();
+    float rotateSquares;
+    int alphaSquares;
+    bool squaresOn;
+    
+    //alphas//
+    void drawAlphas(int posX, int posY, float alpha);
+    ofPoint alphasSetPos;
+    float sineAlphas, counterAlphas;
+    float sineAlphas2, counterAlphas2;
+    bool alphasOn;
     
     
 		void keyPressed(int key);

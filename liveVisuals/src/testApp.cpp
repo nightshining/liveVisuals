@@ -49,6 +49,12 @@ void testApp::setup(){
     //Cir bool
     cirOn == false;
     
+    //Squares bool
+    squaresOn == false;
+    
+    //Alphas bool
+    alphasSetPos.set(0, 0);
+    alphasOn == false;
 }
 
 //--------------------------------------------------------------
@@ -115,6 +121,19 @@ void testApp::update(){
     cirRotate += 0.50f;
     }
     
+    if (squaresOn == true){
+    rotateSquares += 0.55f;
+    alphaSquares -= 10;
+    }
+    
+    if (alphasOn == true) {
+    counterAlphas += 0.05f;
+    counterAlphas2 += 0.01f;
+    
+    sineAlphas = 240 * sin(counterAlphas);
+    sineAlphas2 = 240 * sin(counterAlphas2);
+    }
+    
 }
 
 //--------------------------------------------------------------
@@ -165,6 +184,16 @@ void testApp::draw(){
     if (logoOn == true) {
     drawLogo();
     }
+    
+    if (squaresOn == true) {
+    drawSquares();
+    }
+    
+    if (alphasOn == true) {
+    drawAlphas(alphasSetPos.x, alphasSetPos.y, sineAlphas);
+    drawAlphas(alphasSetPos.x, alphasSetPos.y + ofGetHeight() / 2, sineAlphas2);
+    }
+    
 }
 void testApp::drawLogo(){
     
@@ -175,6 +204,7 @@ void testApp::drawLogo(){
     img.draw(0, 0, 600, 500);
     ofPopMatrix();
 }
+
 void testApp::drawCube(float alpha) {
     
     for (int i = 0; i < 200; i += 35) {
@@ -366,10 +396,50 @@ void testApp::drawCir() {
     }
 }
 
+void testApp::drawSquares() {
+
+    for (int i = 0; i < ofGetWidth(); i += 75) {
+        for (int j = 0; j < ofGetHeight(); j += 75) {
+            ofPushMatrix();
+            ofTranslate(i, j);
+            ofRotateY(rotateSquares + i * PI);
+            ofRotateX(i * PI / rotateSquares);
+            ofSetColor(ofColor::salmon, 255);
+            ofNoFill();
+            ofRect(0,0, 25, 25);
+            
+            ofSetColor(ofColor::white, alphaSquares);
+            ofNoFill();
+            ofRect(0,0, 50, 50);
+            ofPopMatrix();  
+        }
+    }
+   
+}
+
+void testApp::drawAlphas(int posX, int posY, float alpha) {
+    
+    ofSetCircleResolution(100);
+    
+    ofSetColor(ofColor::white, alpha);
+    ofFill();
+    ofPushMatrix();
+    ofRect(posX, posY, ofGetWidth(), ofGetHeight() / 2);
+    ofPopMatrix();
+    
+    for (int i = 0; i < ofGetWidth(); i += 200) {
+    ofSetColor(ofColor::white, -alpha);
+    ofFill();
+    ofPushMatrix();
+    ofCircle(posX + i, posY + 150, 50);
+    ofPopMatrix();
+    }
+}
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
 
+    
     ///// SIFT THROUGH VISUALS /////
     
     if (key == OF_KEY_UP) {
@@ -449,12 +519,26 @@ void testApp::keyPressed(int key){
     if (key == 'a') {
     cirAlpha = 230;
     }
+    
+    //Turn SQUARES on
+    counter == 10 ? squaresOn = true : squaresOn = false;
+    if (key == 's') {
+        alphaSquares = 240;
+    }
+    
+    //Turn ALPHAS on
+    if (key == ' ') {
+        alphasOn = true;
+    }
+    
 }
 
 //--------------------------------------------------------------
 void testApp::keyReleased(int key){
 
-    
+    if (key == ' ') {
+        alphasOn = false;
+    }
    
 }
 
