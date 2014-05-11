@@ -1,5 +1,7 @@
 #pragma once
 
+////VISUAL SOFTWARE FOR CITYGIRL PERFORMANCE////
+
 #include "ofMain.h"
 
 class testApp : public ofBaseApp{
@@ -8,6 +10,12 @@ class testApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
+    
+    //logo
+    void drawLogo();
+    ofImage img;
+    bool logoOn;
+    int logoAlpha;
         
     //cube//
     void drawCube(float alpha);
@@ -24,7 +32,45 @@ class testApp : public ofBaseApp{
     void drawPent(float alpha);
     float rotatePent, alphaTriggerPent;
     bool pentOn;
-
+    
+    //blurry orbs//
+    void drawBlurryOrbs(ofColor insideOrb, ofVec2f scale, float alpha);
+    float rotateOrbs, alphaOrbs, alphaOrbsTrigger;
+    bool orbsOn;
+    
+    //points//
+    void drawPoints();
+    bool pointsOn;
+    float pointsGreen, pointsCounter;
+    float pointsRed, pointsCounter2;
+    ofVideoPlayer vid1;
+    
+    //bars//
+    void drawBars();
+    bool barsOn;
+    ofPoint barsMove;
+    float barsCounter, barsNoise;
+    
+    //spiral
+    void drawSpiral();
+    float counterSpiral, rotateSpiral, sineSpiral; 
+    bool spiralOn;
+    
+    //triangles
+    void drawTri(int moveL, int moveR);
+    bool triOn;
+    float rotateTri, rotateTri2;
+    ofPoint triPos;
+    
+    //circles
+    void drawCir();
+    int cirAlpha, cirRotate;
+    bool cirOn;
+    
+    //squares
+    void drawSquares();
+    
+    
 		void keyPressed(int key);
 		void keyReleased(int key);
 		void mouseMoved(int x, int y );
@@ -37,6 +83,6 @@ class testApp : public ofBaseApp{
 
 	//Cycle through visuals
     int counter;
-    
+    ofEasyCam cam;
     
 };
