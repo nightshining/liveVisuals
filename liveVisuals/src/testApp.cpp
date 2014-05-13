@@ -10,9 +10,10 @@ void testApp::setup(){
     ofEnableSmoothing();
     ofSetFrameRate(60);
     
+    
     //Logo imd and bool
     img.loadImage("logo.jpg");
-    logoOn == false;
+    logoOn = false;
     
     //Points vid and bool
     vid1.loadMovie("1.mov");
@@ -43,18 +44,26 @@ void testApp::setup(){
     spiralOn = false;
     
     //Tri bool
-    triOn == false;
+    triOn = false;
     triPos.set(0, 0);
     
     //Cir bool
-    cirOn == false;
+    cirOn = false;
     
     //Squares bool
-    squaresOn == false;
+    squaresOn = false;
     
     //Alphas bool
     alphasSetPos.set(0, 0);
-    alphasOn == false;
+    alphasOn = false;
+    
+    //Sphere bool
+    spherePos.set(0, 0);
+    sphereOn = false;
+    
+    //Diamonds bool
+    diamondsOn = false;
+    diamondsPos.set(0, 0);
 }
 
 //--------------------------------------------------------------
@@ -134,6 +143,17 @@ void testApp::update(){
     sineAlphas2 = 240 * sin(counterAlphas2);
     }
     
+    if (sphereOn == true) {
+    rotateSphere += 0.33f;
+    noise += 0.06f;
+    sphereNoise = 100 * ofNoise(noise); 
+    }    
+    
+    if (diamondsOn == true) {
+    rotateDiamonds += 0.33f;
+    counterDiamonds += 0.005f;
+    sineDiamonds = 255 * sin(counterDiamonds);
+    }
 }
 
 //--------------------------------------------------------------
@@ -193,7 +213,17 @@ void testApp::draw(){
     drawAlphas(alphasSetPos.x, alphasSetPos.y, sineAlphas);
     drawAlphas(alphasSetPos.x, alphasSetPos.y + ofGetHeight() / 2, sineAlphas2);
     }
+
+    if (sphereOn == true) {
+    drawSphere(ofColor::magenta, sphereNoise);
+    drawSphere(ofColor::white, 300);
+    }
     
+    if (diamondsOn == true) {
+        drawDiamonds();
+    }    
+    cout << "reset: " << sineDiamonds << endl;
+
 }
 void testApp::drawLogo(){
     
@@ -301,7 +331,7 @@ void testApp::drawPoints() {
             float val = 1 - ((float)b  / 255.0f);
             ofSetColor(r + pointsRed, pointsGreen, b, 200);
             ofPushMatrix();          
-            ofTranslate(150, 100);
+            ofTranslate(275, 100);
             ofScale(1.0, 1.0);
             ofFill();
             ofCircle(i, j, ofMap(val, 0.0, 1.0, -1, -200), val + 1.0);
@@ -436,6 +466,46 @@ void testApp::drawAlphas(int posX, int posY, float alpha) {
     }
 }
 
+void testApp::drawSphere(ofColor c1, int size) {
+    
+    ofSetCircleResolution(100);
+    for (int i = 0; i < 200; i += 5) {
+    ofPushMatrix();
+    ofSetColor(c1, i + 50);
+    ofNoFill();
+    ofTranslate(ofGetWidth() / 2, ofGetHeight() / 2);
+    ofScale(1.0, 1.0);
+    ofRotateX(i + rotateSphere);
+    ofRotateY(i + rotateSphere);
+    ofCircle(spherePos, size);
+    ofPopMatrix();
+    }
+    
+}
+
+void testApp::drawDiamonds(){
+    
+    ofSetCircleResolution(4);
+    for (int i = 0; i < ofGetWidth(); i += 100) {
+        for (int j = 0; j < ofGetHeight(); j += 100) {
+            ofPushMatrix();
+            ofTranslate( i, j );
+            ofRotateX(rotateDiamonds);
+            ofRotateY(sineDiamonds);
+            ofSetColor(ofColor::white);
+            ofNoFill();
+            ofCircle(diamondsPos, 50);
+            ofSetColor(ofColor::white, ofMap(-sineDiamonds, 255, -255, 255, 0, true));
+            ofFill();
+            ofCircle(diamondsPos, 40);
+            ofSetColor(ofColor::salmon, ofMap(sineDiamonds, -255, 255, 0, 255, true));
+            ofFill();
+            ofCircle(diamondsPos, 25);
+            ofPopMatrix(); 
+        }
+    }    
+}
+
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
 
@@ -459,6 +529,8 @@ void testApp::keyPressed(int key){
     if (key == '2') {
         ofSetFullscreen(true);
     }
+    
+    
     
     //Turn LOGO on
     counter == 0 ? logoOn = true : logoOn = false;
@@ -530,6 +602,54 @@ void testApp::keyPressed(int key){
     if (key == ' ') {
         alphasOn = true;
     }
+    
+    //Turn SPHERE on
+    counter == 11 ? sphereOn = true : sphereOn = false;
+
+    //Turn DIAMONDS on
+    counter == 12 ? diamondsOn = true : diamondsOn = false;
+    
+    
+    if (key == 'r') { ///KILL ALL///
+        logoAlpha = 0;
+        rotate = 0;
+        alphaTrigger = 0;
+        counterLine = 0;
+        sineWave = 0;
+        rotatePent = 0;
+        alphaTriggerPent = 0;
+        rotateOrbs = 0;
+        alphaOrbs = 0;
+        alphaOrbsTrigger = 0;
+        pointsGreen = 0;
+        pointsCounter = 0;
+        pointsRed = 0;
+        pointsCounter2 = 0;
+        barsCounter = 0;
+        barsNoise = 0;
+        counterSpiral = 0;
+        rotateSpiral = 0;
+        sineSpiral = 0;
+        rotateTri = 0;
+        rotateTri2 = 0;
+        cirAlpha = 0;
+        cirRotate = 0;
+        rotateSquares = 0;
+        alphaSquares = 0;
+        sineAlphas = 0;
+        counterAlphas = 0;
+        sineAlphas2 = 0;
+        counterAlphas2 = 0;
+        rotateSphere = 0;
+        noise = 0;
+        sphereNoise = 0;
+        rotateDiamonds = 0;
+        counterDiamonds = 0;
+        sineDiamonds = 0;
+        
+        cout << "reset: " << sineDiamonds << endl;
+    }
+    
     
 }
 

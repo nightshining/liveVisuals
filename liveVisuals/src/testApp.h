@@ -80,6 +80,17 @@ class testApp : public ofBaseApp{
     float sineAlphas2, counterAlphas2;
     bool alphasOn;
     
+    //sphere//
+    void drawSphere(ofColor c1, int size);
+    float rotateSphere, noise, sphereNoise;
+    ofPoint spherePos;
+    bool sphereOn;
+    
+    //diamonds//
+    void drawDiamonds();
+    bool diamondsOn;
+    float rotateDiamonds, counterDiamonds, sineDiamonds;
+    ofPoint diamondsPos;
     
 		void keyPressed(int key);
 		void keyReleased(int key);
@@ -94,5 +105,4 @@ class testApp : public ofBaseApp{
 	//Cycle through visuals
     int counter;
     ofEasyCam cam;
-    
 };
