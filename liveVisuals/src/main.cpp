@@ -1,12 +1,18 @@
 #include "ofMain.h"
 #include "testApp.h"
+#include "ofAppGlutWindow.h"
 
 //========================================================================
 int main( ){
-	ofSetupOpenGL(1280,800,OF_WINDOW);			// <-------- setup the GL context
-	// this kicks off the running of my app
-	// can be OF_WINDOW or OF_FULLSCREEN
-	// pass in width and height too:
+    
+    ofAppGlutWindow window; //CORE IMAGE UNITS ONLY WORK WITH GLUT WINDOW RIGHT NOW - NOT GLFW
+    
+	//ofSetupOpenGL(1024,768,OF_WINDOW);			// <-------- setup the GL context
+    
+    // window.setGlutDisplayString("rgba double samples>=4");
+    ofSetupOpenGL(&window, 1024,768, OF_WINDOW);
+    
 	ofRunApp(new testApp());
-
+    
+    ///CHANGED SETTINGS HERE TO ACCOMDATE ofxCoreImage
 }

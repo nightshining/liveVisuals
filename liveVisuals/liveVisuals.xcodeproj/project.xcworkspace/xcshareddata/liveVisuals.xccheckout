@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EC334F98-E43E-41B9-A929-28B0A01A7740</string>
+	<key>IDESourceControlProjectName</key>
+	<string>liveVisuals</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>72A1A8E5-C019-4B0B-A74D-F58CE6D8C194</key>
+		<string>https://github.com/laserpilot/ofxCoreImage.git</string>
+		<key>D0B01822-5760-4BEF-A2CC-7909079375DE</key>
+		<string>https://github.com/nightshining/liveVisuals.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>liveVisuals/liveVisuals.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>72A1A8E5-C019-4B0B-A74D-F58CE6D8C194</key>
+		<string>../../../../../addons/ofxCoreImage</string>
+		<key>D0B01822-5760-4BEF-A2CC-7909079375DE</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nightshining/liveVisuals.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D0B01822-5760-4BEF-A2CC-7909079375DE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D0B01822-5760-4BEF-A2CC-7909079375DE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>liveVisuals</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>72A1A8E5-C019-4B0B-A74D-F58CE6D8C194</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxCoreImage</string>
+		</dict>
+	</array>
+</dict>
+</plist>

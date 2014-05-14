@@ -24,6 +24,85 @@
 		E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424510CC5A17004149E2 /* Cocoa.framework */; };
 		E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424610CC5A17004149E2 /* IOKit.framework */; };
 		E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		E610762E19228E3F00ADB96C /* drawLogo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E610762C19228E3F00ADB96C /* drawLogo.cpp */; };
+		E61076311922958000ADB96C /* drawCube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E610762F1922958000ADB96C /* drawCube.cpp */; };
+		E610763519229A5600ADB96C /* drawPoints.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E610763319229A5600ADB96C /* drawPoints.cpp */; };
+		E610763819229FC800ADB96C /* drawLines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E610763619229FC800ADB96C /* drawLines.cpp */; };
+		E610763B1922A20F00ADB96C /* drawPent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E61076391922A20F00ADB96C /* drawPent.cpp */; };
+		E610763E1922A3B000ADB96C /* drawBlurryOrbs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E610763C1922A3B000ADB96C /* drawBlurryOrbs.cpp */; };
+		E61076411922A73300ADB96C /* drawBars.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E610763F1922A73300ADB96C /* drawBars.cpp */; };
+		E66A7D491923E9A300E337CB /* drawSpirals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E66A7D471923E9A300E337CB /* drawSpirals.cpp */; };
+		E66A7D4C1923EA9B00E337CB /* drawTriangles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E66A7D4A1923EA9B00E337CB /* drawTriangles.cpp */; };
+		E66A7D4F1923ECD700E337CB /* drawCircles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E66A7D4D1923ECD700E337CB /* drawCircles.cpp */; };
+		E66A7D521923EFAA00E337CB /* drawSquares.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E66A7D501923EFAA00E337CB /* drawSquares.cpp */; };
+		E66A7D551923F18900E337CB /* drawAlphas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E66A7D531923F18900E337CB /* drawAlphas.cpp */; };
+		E66A7D581923F3F800E337CB /* drawSpheres.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E66A7D561923F3F800E337CB /* drawSpheres.cpp */; };
+		E66A7D5B1923F59600E337CB /* drawDiamonds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E66A7D591923F59600E337CB /* drawDiamonds.cpp */; };
+		E67AF670192272540017A2FF /* ofxCIAdditionCompositing.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF5EF192272540017A2FF /* ofxCIAdditionCompositing.mm */; };
+		E67AF671192272540017A2FF /* ofxCIColorBlendMode.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF5F1192272540017A2FF /* ofxCIColorBlendMode.mm */; };
+		E67AF672192272540017A2FF /* ofxCIColorBurnBlendMode.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF5F3192272540017A2FF /* ofxCIColorBurnBlendMode.mm */; };
+		E67AF673192272540017A2FF /* ofxCIColorDodgeBlendMode.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF5F5192272540017A2FF /* ofxCIColorDodgeBlendMode.mm */; };
+		E67AF674192272540017A2FF /* ofxCIDarkenBlendMode.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF5F7192272540017A2FF /* ofxCIDarkenBlendMode.mm */; };
+		E67AF675192272540017A2FF /* ofxCIDifferenceBlendMode.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF5F9192272540017A2FF /* ofxCIDifferenceBlendMode.mm */; };
+		E67AF676192272540017A2FF /* ofxCIExclusionBlendMode.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF5FB192272540017A2FF /* ofxCIExclusionBlendMode.mm */; };
+		E67AF677192272540017A2FF /* ofxCIHardLightBlendMode.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF5FD192272540017A2FF /* ofxCIHardLightBlendMode.mm */; };
+		E67AF678192272540017A2FF /* ofxCIHueBlendMode.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF5FF192272540017A2FF /* ofxCIHueBlendMode.mm */; };
+		E67AF679192272540017A2FF /* ofxCILightenBlendMode.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF601192272540017A2FF /* ofxCILightenBlendMode.mm */; };
+		E67AF67A192272540017A2FF /* ofxCILuminosityBlendMode.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF603192272540017A2FF /* ofxCILuminosityBlendMode.mm */; };
+		E67AF67B192272540017A2FF /* ofxCIMultiplyBlendMode.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF605192272540017A2FF /* ofxCIMultiplyBlendMode.mm */; };
+		E67AF67C192272540017A2FF /* ofxCIOverlayBlendMode.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF607192272540017A2FF /* ofxCIOverlayBlendMode.mm */; };
+		E67AF67D192272540017A2FF /* ofxCISaturationBlendMode.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF609192272540017A2FF /* ofxCISaturationBlendMode.mm */; };
+		E67AF67E192272540017A2FF /* ofxCIScreenBlendMode.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF60B192272540017A2FF /* ofxCIScreenBlendMode.mm */; };
+		E67AF67F192272540017A2FF /* ofxCISoftLightBlendMode.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF60D192272540017A2FF /* ofxCISoftLightBlendMode.mm */; };
+		E67AF680192272540017A2FF /* ofxCISourceAtopCompositing.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF60F192272540017A2FF /* ofxCISourceAtopCompositing.mm */; };
+		E67AF681192272540017A2FF /* ofxCISourceInCompositing.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF611192272540017A2FF /* ofxCISourceInCompositing.mm */; };
+		E67AF682192272540017A2FF /* ofxCISourceOutCompositing.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF613192272540017A2FF /* ofxCISourceOutCompositing.mm */; };
+		E67AF683192272540017A2FF /* ofxCISourceOverCompositing.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF615192272540017A2FF /* ofxCISourceOverCompositing.mm */; };
+		E67AF684192272540017A2FF /* ofxCIBloom.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF618192272540017A2FF /* ofxCIBloom.mm */; };
+		E67AF685192272540017A2FF /* ofxCIBlur.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF61A192272540017A2FF /* ofxCIBlur.mm */; };
+		E67AF686192272540017A2FF /* ofxCIBoxBlur.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF61C192272540017A2FF /* ofxCIBoxBlur.mm */; };
+		E67AF687192272540017A2FF /* ofxCIBumpDistortion.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF61E192272540017A2FF /* ofxCIBumpDistortion.mm */; };
+		E67AF688192272540017A2FF /* ofxCIBumpDistortionLinear.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF620192272540017A2FF /* ofxCIBumpDistortionLinear.mm */; };
+		E67AF689192272540017A2FF /* ofxCICircleSplashDistortion.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF622192272540017A2FF /* ofxCICircleSplashDistortion.mm */; };
+		E67AF68A192272540017A2FF /* ofxCICircularScreen.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF624192272540017A2FF /* ofxCICircularScreen.mm */; };
+		E67AF68B192272540017A2FF /* ofxCICircularWrapDistortion.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF626192272540017A2FF /* ofxCICircularWrapDistortion.mm */; };
+		E67AF68C192272540017A2FF /* ofxCIColorControls.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF628192272540017A2FF /* ofxCIColorControls.mm */; };
+		E67AF68D192272540017A2FF /* ofxCIColorInvert.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF62A192272540017A2FF /* ofxCIColorInvert.mm */; };
+		E67AF68E192272540017A2FF /* ofxCIColorMonochrome.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF62C192272540017A2FF /* ofxCIColorMonochrome.mm */; };
+		E67AF68F192272540017A2FF /* ofxCIColorPosterize.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF62E192272540017A2FF /* ofxCIColorPosterize.mm */; };
+		E67AF690192272540017A2FF /* ofxCICrop.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF630192272540017A2FF /* ofxCICrop.mm */; };
+		E67AF691192272540017A2FF /* ofxCICrystallize.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF632192272540017A2FF /* ofxCICrystallize.mm */; };
+		E67AF692192272540017A2FF /* ofxCIDroste.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF634192272540017A2FF /* ofxCIDroste.mm */; };
+		E67AF693192272540017A2FF /* ofxCIEdges.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF636192272540017A2FF /* ofxCIEdges.mm */; };
+		E67AF694192272540017A2FF /* ofxCIEdgeWork.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF638192272540017A2FF /* ofxCIEdgeWork.mm */; };
+		E67AF695192272540017A2FF /* ofxCIExposureAdjust.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF63A192272540017A2FF /* ofxCIExposureAdjust.mm */; };
+		E67AF696192272540017A2FF /* ofxCIFalseColor.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF63C192272540017A2FF /* ofxCIFalseColor.mm */; };
+		E67AF697192272540017A2FF /* ofxCIGammaAdjust.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF63E192272540017A2FF /* ofxCIGammaAdjust.mm */; };
+		E67AF698192272540017A2FF /* ofxCIGlassDistortion.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF640192272540017A2FF /* ofxCIGlassDistortion.mm */; };
+		E67AF699192272540017A2FF /* ofxCIGlassLozenge.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF642192272540017A2FF /* ofxCIGlassLozenge.mm */; };
+		E67AF69A192272540017A2FF /* ofxCIGloom.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF644192272540017A2FF /* ofxCIGloom.mm */; };
+		E67AF69B192272540017A2FF /* ofxCIHexagonalPixellate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF646192272540017A2FF /* ofxCIHexagonalPixellate.mm */; };
+		E67AF69C192272540017A2FF /* ofxCIHoleDistortion.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF648192272540017A2FF /* ofxCIHoleDistortion.mm */; };
+		E67AF69D192272540017A2FF /* ofxCIHue.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF64A192272540017A2FF /* ofxCIHue.mm */; };
+		E67AF69E192272540017A2FF /* ofxCIKaleidoscope.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF64C192272540017A2FF /* ofxCIKaleidoscope.mm */; };
+		E67AF69F192272540017A2FF /* ofxCILineScreen.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF64E192272540017A2FF /* ofxCILineScreen.mm */; };
+		E67AF6A0192272540017A2FF /* ofxCIMotionBlur.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF650192272540017A2FF /* ofxCIMotionBlur.mm */; };
+		E67AF6A1192272540017A2FF /* ofxCIOpTile.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF652192272540017A2FF /* ofxCIOpTile.mm */; };
+		E67AF6A2192272540017A2FF /* ofxCIPinchDistortion.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF654192272540017A2FF /* ofxCIPinchDistortion.mm */; };
+		E67AF6A3192272540017A2FF /* ofxCIPixellate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF656192272540017A2FF /* ofxCIPixellate.mm */; };
+		E67AF6A4192272540017A2FF /* ofxCIPointillize.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF658192272540017A2FF /* ofxCIPointillize.mm */; };
+		E67AF6A5192272540017A2FF /* ofxCIToneCurve.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF65A192272540017A2FF /* ofxCIToneCurve.mm */; };
+		E67AF6A6192272540017A2FF /* ofxCITorusLensDistortion.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF65C192272540017A2FF /* ofxCITorusLensDistortion.mm */; };
+		E67AF6A7192272540017A2FF /* ofxCITwirlDistortion.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF65E192272540017A2FF /* ofxCITwirlDistortion.mm */; };
+		E67AF6A8192272540017A2FF /* ofxCIVortexDistortion.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF660192272540017A2FF /* ofxCIVortexDistortion.mm */; };
+		E67AF6A9192272540017A2FF /* ofxCIZoomBlur.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF662192272540017A2FF /* ofxCIZoomBlur.mm */; };
+		E67AF6AA192272540017A2FF /* ofxCIFilter.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF664192272540017A2FF /* ofxCIFilter.mm */; };
+		E67AF6AB192272540017A2FF /* ofxCoreImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF666192272540017A2FF /* ofxCoreImage.mm */; };
+		E67AF6AC192272540017A2FF /* ofxCIBarsSwipeTransition.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF669192272540017A2FF /* ofxCIBarsSwipeTransition.mm */; };
+		E67AF6AD192272540017A2FF /* ofxCICopyMachineTransition.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF66B192272540017A2FF /* ofxCICopyMachineTransition.mm */; };
+		E67AF6AE192272540017A2FF /* ofxCIDissolveTransition.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF66D192272540017A2FF /* ofxCIDissolveTransition.mm */; };
+		E67AF6AF192272540017A2FF /* ofxCIRippleTransition.mm in Sources */ = {isa = PBXBuildFile; fileRef = E67AF66F192272540017A2FF /* ofxCIRippleTransition.mm */; };
+		E67AF6B1192272E20017A2FF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67AF6B0192272E10017A2FF /* QuartzCore.framework */; };
 		E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */; };
 		E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
 		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
@@ -81,6 +160,163 @@
 		E4C2424610CC5A17004149E2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
 		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
 		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		E610762C19228E3F00ADB96C /* drawLogo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawLogo.cpp; sourceTree = "<group>"; };
+		E610762D19228E3F00ADB96C /* drawLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawLogo.h; sourceTree = "<group>"; };
+		E610762F1922958000ADB96C /* drawCube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawCube.cpp; sourceTree = "<group>"; };
+		E61076301922958000ADB96C /* drawCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawCube.h; sourceTree = "<group>"; };
+		E610763319229A5600ADB96C /* drawPoints.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawPoints.cpp; sourceTree = "<group>"; };
+		E610763419229A5600ADB96C /* drawPoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawPoints.h; sourceTree = "<group>"; };
+		E610763619229FC800ADB96C /* drawLines.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawLines.cpp; sourceTree = "<group>"; };
+		E610763719229FC800ADB96C /* drawLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawLines.h; sourceTree = "<group>"; };
+		E61076391922A20F00ADB96C /* drawPent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawPent.cpp; sourceTree = "<group>"; };
+		E610763A1922A20F00ADB96C /* drawPent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawPent.h; sourceTree = "<group>"; };
+		E610763C1922A3B000ADB96C /* drawBlurryOrbs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawBlurryOrbs.cpp; sourceTree = "<group>"; };
+		E610763D1922A3B000ADB96C /* drawBlurryOrbs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawBlurryOrbs.h; sourceTree = "<group>"; };
+		E610763F1922A73300ADB96C /* drawBars.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawBars.cpp; sourceTree = "<group>"; };
+		E61076401922A73300ADB96C /* drawBars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawBars.h; sourceTree = "<group>"; };
+		E66A7D471923E9A300E337CB /* drawSpirals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawSpirals.cpp; sourceTree = "<group>"; };
+		E66A7D481923E9A300E337CB /* drawSpirals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawSpirals.h; sourceTree = "<group>"; };
+		E66A7D4A1923EA9B00E337CB /* drawTriangles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawTriangles.cpp; sourceTree = "<group>"; };
+		E66A7D4B1923EA9B00E337CB /* drawTriangles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawTriangles.h; sourceTree = "<group>"; };
+		E66A7D4D1923ECD700E337CB /* drawCircles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawCircles.cpp; sourceTree = "<group>"; };
+		E66A7D4E1923ECD700E337CB /* drawCircles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawCircles.h; sourceTree = "<group>"; };
+		E66A7D501923EFAA00E337CB /* drawSquares.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawSquares.cpp; sourceTree = "<group>"; };
+		E66A7D511923EFAA00E337CB /* drawSquares.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawSquares.h; sourceTree = "<group>"; };
+		E66A7D531923F18900E337CB /* drawAlphas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawAlphas.cpp; sourceTree = "<group>"; };
+		E66A7D541923F18900E337CB /* drawAlphas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawAlphas.h; sourceTree = "<group>"; };
+		E66A7D561923F3F800E337CB /* drawSpheres.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawSpheres.cpp; sourceTree = "<group>"; };
+		E66A7D571923F3F800E337CB /* drawSpheres.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawSpheres.h; sourceTree = "<group>"; };
+		E66A7D591923F59600E337CB /* drawDiamonds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawDiamonds.cpp; sourceTree = "<group>"; };
+		E66A7D5A1923F59600E337CB /* drawDiamonds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawDiamonds.h; sourceTree = "<group>"; };
+		E67AF5EE192272540017A2FF /* ofxCIAdditionCompositing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIAdditionCompositing.h; sourceTree = "<group>"; };
+		E67AF5EF192272540017A2FF /* ofxCIAdditionCompositing.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIAdditionCompositing.mm; sourceTree = "<group>"; };
+		E67AF5F0192272540017A2FF /* ofxCIColorBlendMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIColorBlendMode.h; sourceTree = "<group>"; };
+		E67AF5F1192272540017A2FF /* ofxCIColorBlendMode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIColorBlendMode.mm; sourceTree = "<group>"; };
+		E67AF5F2192272540017A2FF /* ofxCIColorBurnBlendMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIColorBurnBlendMode.h; sourceTree = "<group>"; };
+		E67AF5F3192272540017A2FF /* ofxCIColorBurnBlendMode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIColorBurnBlendMode.mm; sourceTree = "<group>"; };
+		E67AF5F4192272540017A2FF /* ofxCIColorDodgeBlendMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIColorDodgeBlendMode.h; sourceTree = "<group>"; };
+		E67AF5F5192272540017A2FF /* ofxCIColorDodgeBlendMode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIColorDodgeBlendMode.mm; sourceTree = "<group>"; };
+		E67AF5F6192272540017A2FF /* ofxCIDarkenBlendMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIDarkenBlendMode.h; sourceTree = "<group>"; };
+		E67AF5F7192272540017A2FF /* ofxCIDarkenBlendMode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIDarkenBlendMode.mm; sourceTree = "<group>"; };
+		E67AF5F8192272540017A2FF /* ofxCIDifferenceBlendMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIDifferenceBlendMode.h; sourceTree = "<group>"; };
+		E67AF5F9192272540017A2FF /* ofxCIDifferenceBlendMode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIDifferenceBlendMode.mm; sourceTree = "<group>"; };
+		E67AF5FA192272540017A2FF /* ofxCIExclusionBlendMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIExclusionBlendMode.h; sourceTree = "<group>"; };
+		E67AF5FB192272540017A2FF /* ofxCIExclusionBlendMode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIExclusionBlendMode.mm; sourceTree = "<group>"; };
+		E67AF5FC192272540017A2FF /* ofxCIHardLightBlendMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIHardLightBlendMode.h; sourceTree = "<group>"; };
+		E67AF5FD192272540017A2FF /* ofxCIHardLightBlendMode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIHardLightBlendMode.mm; sourceTree = "<group>"; };
+		E67AF5FE192272540017A2FF /* ofxCIHueBlendMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIHueBlendMode.h; sourceTree = "<group>"; };
+		E67AF5FF192272540017A2FF /* ofxCIHueBlendMode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIHueBlendMode.mm; sourceTree = "<group>"; };
+		E67AF600192272540017A2FF /* ofxCILightenBlendMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCILightenBlendMode.h; sourceTree = "<group>"; };
+		E67AF601192272540017A2FF /* ofxCILightenBlendMode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCILightenBlendMode.mm; sourceTree = "<group>"; };
+		E67AF602192272540017A2FF /* ofxCILuminosityBlendMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCILuminosityBlendMode.h; sourceTree = "<group>"; };
+		E67AF603192272540017A2FF /* ofxCILuminosityBlendMode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCILuminosityBlendMode.mm; sourceTree = "<group>"; };
+		E67AF604192272540017A2FF /* ofxCIMultiplyBlendMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIMultiplyBlendMode.h; sourceTree = "<group>"; };
+		E67AF605192272540017A2FF /* ofxCIMultiplyBlendMode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIMultiplyBlendMode.mm; sourceTree = "<group>"; };
+		E67AF606192272540017A2FF /* ofxCIOverlayBlendMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIOverlayBlendMode.h; sourceTree = "<group>"; };
+		E67AF607192272540017A2FF /* ofxCIOverlayBlendMode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIOverlayBlendMode.mm; sourceTree = "<group>"; };
+		E67AF608192272540017A2FF /* ofxCISaturationBlendMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCISaturationBlendMode.h; sourceTree = "<group>"; };
+		E67AF609192272540017A2FF /* ofxCISaturationBlendMode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCISaturationBlendMode.mm; sourceTree = "<group>"; };
+		E67AF60A192272540017A2FF /* ofxCIScreenBlendMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIScreenBlendMode.h; sourceTree = "<group>"; };
+		E67AF60B192272540017A2FF /* ofxCIScreenBlendMode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIScreenBlendMode.mm; sourceTree = "<group>"; };
+		E67AF60C192272540017A2FF /* ofxCISoftLightBlendMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCISoftLightBlendMode.h; sourceTree = "<group>"; };
+		E67AF60D192272540017A2FF /* ofxCISoftLightBlendMode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCISoftLightBlendMode.mm; sourceTree = "<group>"; };
+		E67AF60E192272540017A2FF /* ofxCISourceAtopCompositing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCISourceAtopCompositing.h; sourceTree = "<group>"; };
+		E67AF60F192272540017A2FF /* ofxCISourceAtopCompositing.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCISourceAtopCompositing.mm; sourceTree = "<group>"; };
+		E67AF610192272540017A2FF /* ofxCISourceInCompositing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCISourceInCompositing.h; sourceTree = "<group>"; };
+		E67AF611192272540017A2FF /* ofxCISourceInCompositing.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCISourceInCompositing.mm; sourceTree = "<group>"; };
+		E67AF612192272540017A2FF /* ofxCISourceOutCompositing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCISourceOutCompositing.h; sourceTree = "<group>"; };
+		E67AF613192272540017A2FF /* ofxCISourceOutCompositing.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCISourceOutCompositing.mm; sourceTree = "<group>"; };
+		E67AF614192272540017A2FF /* ofxCISourceOverCompositing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCISourceOverCompositing.h; sourceTree = "<group>"; };
+		E67AF615192272540017A2FF /* ofxCISourceOverCompositing.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCISourceOverCompositing.mm; sourceTree = "<group>"; };
+		E67AF617192272540017A2FF /* ofxCIBloom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIBloom.h; sourceTree = "<group>"; };
+		E67AF618192272540017A2FF /* ofxCIBloom.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIBloom.mm; sourceTree = "<group>"; };
+		E67AF619192272540017A2FF /* ofxCIBlur.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIBlur.h; sourceTree = "<group>"; };
+		E67AF61A192272540017A2FF /* ofxCIBlur.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIBlur.mm; sourceTree = "<group>"; };
+		E67AF61B192272540017A2FF /* ofxCIBoxBlur.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIBoxBlur.h; sourceTree = "<group>"; };
+		E67AF61C192272540017A2FF /* ofxCIBoxBlur.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIBoxBlur.mm; sourceTree = "<group>"; };
+		E67AF61D192272540017A2FF /* ofxCIBumpDistortion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIBumpDistortion.h; sourceTree = "<group>"; };
+		E67AF61E192272540017A2FF /* ofxCIBumpDistortion.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIBumpDistortion.mm; sourceTree = "<group>"; };
+		E67AF61F192272540017A2FF /* ofxCIBumpDistortionLinear.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIBumpDistortionLinear.h; sourceTree = "<group>"; };
+		E67AF620192272540017A2FF /* ofxCIBumpDistortionLinear.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIBumpDistortionLinear.mm; sourceTree = "<group>"; };
+		E67AF621192272540017A2FF /* ofxCICircleSplashDistortion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCICircleSplashDistortion.h; sourceTree = "<group>"; };
+		E67AF622192272540017A2FF /* ofxCICircleSplashDistortion.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCICircleSplashDistortion.mm; sourceTree = "<group>"; };
+		E67AF623192272540017A2FF /* ofxCICircularScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCICircularScreen.h; sourceTree = "<group>"; };
+		E67AF624192272540017A2FF /* ofxCICircularScreen.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCICircularScreen.mm; sourceTree = "<group>"; };
+		E67AF625192272540017A2FF /* ofxCICircularWrapDistortion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCICircularWrapDistortion.h; sourceTree = "<group>"; };
+		E67AF626192272540017A2FF /* ofxCICircularWrapDistortion.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCICircularWrapDistortion.mm; sourceTree = "<group>"; };
+		E67AF627192272540017A2FF /* ofxCIColorControls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIColorControls.h; sourceTree = "<group>"; };
+		E67AF628192272540017A2FF /* ofxCIColorControls.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIColorControls.mm; sourceTree = "<group>"; };
+		E67AF629192272540017A2FF /* ofxCIColorInvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIColorInvert.h; sourceTree = "<group>"; };
+		E67AF62A192272540017A2FF /* ofxCIColorInvert.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIColorInvert.mm; sourceTree = "<group>"; };
+		E67AF62B192272540017A2FF /* ofxCIColorMonochrome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIColorMonochrome.h; sourceTree = "<group>"; };
+		E67AF62C192272540017A2FF /* ofxCIColorMonochrome.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIColorMonochrome.mm; sourceTree = "<group>"; };
+		E67AF62D192272540017A2FF /* ofxCIColorPosterize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIColorPosterize.h; sourceTree = "<group>"; };
+		E67AF62E192272540017A2FF /* ofxCIColorPosterize.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIColorPosterize.mm; sourceTree = "<group>"; };
+		E67AF62F192272540017A2FF /* ofxCICrop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCICrop.h; sourceTree = "<group>"; };
+		E67AF630192272540017A2FF /* ofxCICrop.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCICrop.mm; sourceTree = "<group>"; };
+		E67AF631192272540017A2FF /* ofxCICrystallize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCICrystallize.h; sourceTree = "<group>"; };
+		E67AF632192272540017A2FF /* ofxCICrystallize.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCICrystallize.mm; sourceTree = "<group>"; };
+		E67AF633192272540017A2FF /* ofxCIDroste.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIDroste.h; sourceTree = "<group>"; };
+		E67AF634192272540017A2FF /* ofxCIDroste.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIDroste.mm; sourceTree = "<group>"; };
+		E67AF635192272540017A2FF /* ofxCIEdges.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIEdges.h; sourceTree = "<group>"; };
+		E67AF636192272540017A2FF /* ofxCIEdges.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIEdges.mm; sourceTree = "<group>"; };
+		E67AF637192272540017A2FF /* ofxCIEdgeWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIEdgeWork.h; sourceTree = "<group>"; };
+		E67AF638192272540017A2FF /* ofxCIEdgeWork.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIEdgeWork.mm; sourceTree = "<group>"; };
+		E67AF639192272540017A2FF /* ofxCIExposureAdjust.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIExposureAdjust.h; sourceTree = "<group>"; };
+		E67AF63A192272540017A2FF /* ofxCIExposureAdjust.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIExposureAdjust.mm; sourceTree = "<group>"; };
+		E67AF63B192272540017A2FF /* ofxCIFalseColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIFalseColor.h; sourceTree = "<group>"; };
+		E67AF63C192272540017A2FF /* ofxCIFalseColor.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIFalseColor.mm; sourceTree = "<group>"; };
+		E67AF63D192272540017A2FF /* ofxCIGammaAdjust.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIGammaAdjust.h; sourceTree = "<group>"; };
+		E67AF63E192272540017A2FF /* ofxCIGammaAdjust.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIGammaAdjust.mm; sourceTree = "<group>"; };
+		E67AF63F192272540017A2FF /* ofxCIGlassDistortion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIGlassDistortion.h; sourceTree = "<group>"; };
+		E67AF640192272540017A2FF /* ofxCIGlassDistortion.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIGlassDistortion.mm; sourceTree = "<group>"; };
+		E67AF641192272540017A2FF /* ofxCIGlassLozenge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIGlassLozenge.h; sourceTree = "<group>"; };
+		E67AF642192272540017A2FF /* ofxCIGlassLozenge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIGlassLozenge.mm; sourceTree = "<group>"; };
+		E67AF643192272540017A2FF /* ofxCIGloom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIGloom.h; sourceTree = "<group>"; };
+		E67AF644192272540017A2FF /* ofxCIGloom.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIGloom.mm; sourceTree = "<group>"; };
+		E67AF645192272540017A2FF /* ofxCIHexagonalPixellate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIHexagonalPixellate.h; sourceTree = "<group>"; };
+		E67AF646192272540017A2FF /* ofxCIHexagonalPixellate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIHexagonalPixellate.mm; sourceTree = "<group>"; };
+		E67AF647192272540017A2FF /* ofxCIHoleDistortion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIHoleDistortion.h; sourceTree = "<group>"; };
+		E67AF648192272540017A2FF /* ofxCIHoleDistortion.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIHoleDistortion.mm; sourceTree = "<group>"; };
+		E67AF649192272540017A2FF /* ofxCIHue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIHue.h; sourceTree = "<group>"; };
+		E67AF64A192272540017A2FF /* ofxCIHue.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIHue.mm; sourceTree = "<group>"; };
+		E67AF64B192272540017A2FF /* ofxCIKaleidoscope.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIKaleidoscope.h; sourceTree = "<group>"; };
+		E67AF64C192272540017A2FF /* ofxCIKaleidoscope.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIKaleidoscope.mm; sourceTree = "<group>"; };
+		E67AF64D192272540017A2FF /* ofxCILineScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCILineScreen.h; sourceTree = "<group>"; };
+		E67AF64E192272540017A2FF /* ofxCILineScreen.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCILineScreen.mm; sourceTree = "<group>"; };
+		E67AF64F192272540017A2FF /* ofxCIMotionBlur.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIMotionBlur.h; sourceTree = "<group>"; };
+		E67AF650192272540017A2FF /* ofxCIMotionBlur.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIMotionBlur.mm; sourceTree = "<group>"; };
+		E67AF651192272540017A2FF /* ofxCIOpTile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIOpTile.h; sourceTree = "<group>"; };
+		E67AF652192272540017A2FF /* ofxCIOpTile.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIOpTile.mm; sourceTree = "<group>"; };
+		E67AF653192272540017A2FF /* ofxCIPinchDistortion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIPinchDistortion.h; sourceTree = "<group>"; };
+		E67AF654192272540017A2FF /* ofxCIPinchDistortion.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIPinchDistortion.mm; sourceTree = "<group>"; };
+		E67AF655192272540017A2FF /* ofxCIPixellate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIPixellate.h; sourceTree = "<group>"; };
+		E67AF656192272540017A2FF /* ofxCIPixellate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIPixellate.mm; sourceTree = "<group>"; };
+		E67AF657192272540017A2FF /* ofxCIPointillize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIPointillize.h; sourceTree = "<group>"; };
+		E67AF658192272540017A2FF /* ofxCIPointillize.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIPointillize.mm; sourceTree = "<group>"; };
+		E67AF659192272540017A2FF /* ofxCIToneCurve.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIToneCurve.h; sourceTree = "<group>"; };
+		E67AF65A192272540017A2FF /* ofxCIToneCurve.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIToneCurve.mm; sourceTree = "<group>"; };
+		E67AF65B192272540017A2FF /* ofxCITorusLensDistortion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCITorusLensDistortion.h; sourceTree = "<group>"; };
+		E67AF65C192272540017A2FF /* ofxCITorusLensDistortion.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCITorusLensDistortion.mm; sourceTree = "<group>"; };
+		E67AF65D192272540017A2FF /* ofxCITwirlDistortion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCITwirlDistortion.h; sourceTree = "<group>"; };
+		E67AF65E192272540017A2FF /* ofxCITwirlDistortion.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCITwirlDistortion.mm; sourceTree = "<group>"; };
+		E67AF65F192272540017A2FF /* ofxCIVortexDistortion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIVortexDistortion.h; sourceTree = "<group>"; };
+		E67AF660192272540017A2FF /* ofxCIVortexDistortion.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIVortexDistortion.mm; sourceTree = "<group>"; };
+		E67AF661192272540017A2FF /* ofxCIZoomBlur.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIZoomBlur.h; sourceTree = "<group>"; };
+		E67AF662192272540017A2FF /* ofxCIZoomBlur.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIZoomBlur.mm; sourceTree = "<group>"; };
+		E67AF663192272540017A2FF /* ofxCIFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIFilter.h; sourceTree = "<group>"; };
+		E67AF664192272540017A2FF /* ofxCIFilter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIFilter.mm; sourceTree = "<group>"; };
+		E67AF665192272540017A2FF /* ofxCoreImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCoreImage.h; sourceTree = "<group>"; };
+		E67AF666192272540017A2FF /* ofxCoreImage.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCoreImage.mm; sourceTree = "<group>"; };
+		E67AF668192272540017A2FF /* ofxCIBarsSwipeTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIBarsSwipeTransition.h; sourceTree = "<group>"; };
+		E67AF669192272540017A2FF /* ofxCIBarsSwipeTransition.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIBarsSwipeTransition.mm; sourceTree = "<group>"; };
+		E67AF66A192272540017A2FF /* ofxCICopyMachineTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCICopyMachineTransition.h; sourceTree = "<group>"; };
+		E67AF66B192272540017A2FF /* ofxCICopyMachineTransition.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCICopyMachineTransition.mm; sourceTree = "<group>"; };
+		E67AF66C192272540017A2FF /* ofxCIDissolveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIDissolveTransition.h; sourceTree = "<group>"; };
+		E67AF66D192272540017A2FF /* ofxCIDissolveTransition.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIDissolveTransition.mm; sourceTree = "<group>"; };
+		E67AF66E192272540017A2FF /* ofxCIRippleTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCIRippleTransition.h; sourceTree = "<group>"; };
+		E67AF66F192272540017A2FF /* ofxCIRippleTransition.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxCIRippleTransition.mm; sourceTree = "<group>"; };
+		E67AF6B0192272E10017A2FF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
@@ -91,6 +327,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E67AF6B1192272E20017A2FF /* QuartzCore.framework in Frameworks */,
 				E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */,
 				E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */,
 				E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */,
@@ -117,6 +354,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				E67AF5EB192272540017A2FF /* ofxCoreImage */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -171,6 +409,7 @@
 		E4B69B4A0A3A1720003C02F2 = {
 			isa = PBXGroup;
 			children = (
+				E67AF6B0192272E10017A2FF /* QuartzCore.framework */,
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
@@ -187,6 +426,34 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
+				E610762C19228E3F00ADB96C /* drawLogo.cpp */,
+				E610762D19228E3F00ADB96C /* drawLogo.h */,
+				E610762F1922958000ADB96C /* drawCube.cpp */,
+				E61076301922958000ADB96C /* drawCube.h */,
+				E610763319229A5600ADB96C /* drawPoints.cpp */,
+				E610763419229A5600ADB96C /* drawPoints.h */,
+				E610763619229FC800ADB96C /* drawLines.cpp */,
+				E610763719229FC800ADB96C /* drawLines.h */,
+				E61076391922A20F00ADB96C /* drawPent.cpp */,
+				E610763A1922A20F00ADB96C /* drawPent.h */,
+				E610763C1922A3B000ADB96C /* drawBlurryOrbs.cpp */,
+				E610763D1922A3B000ADB96C /* drawBlurryOrbs.h */,
+				E610763F1922A73300ADB96C /* drawBars.cpp */,
+				E61076401922A73300ADB96C /* drawBars.h */,
+				E66A7D471923E9A300E337CB /* drawSpirals.cpp */,
+				E66A7D481923E9A300E337CB /* drawSpirals.h */,
+				E66A7D4A1923EA9B00E337CB /* drawTriangles.cpp */,
+				E66A7D4B1923EA9B00E337CB /* drawTriangles.h */,
+				E66A7D4D1923ECD700E337CB /* drawCircles.cpp */,
+				E66A7D4E1923ECD700E337CB /* drawCircles.h */,
+				E66A7D501923EFAA00E337CB /* drawSquares.cpp */,
+				E66A7D511923EFAA00E337CB /* drawSquares.h */,
+				E66A7D531923F18900E337CB /* drawAlphas.cpp */,
+				E66A7D541923F18900E337CB /* drawAlphas.h */,
+				E66A7D561923F3F800E337CB /* drawSpheres.cpp */,
+				E66A7D571923F3F800E337CB /* drawSpheres.h */,
+				E66A7D591923F59600E337CB /* drawDiamonds.cpp */,
+				E66A7D5A1923F59600E337CB /* drawDiamonds.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -198,6 +465,174 @@
 				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
 			);
 			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		E67AF5EB192272540017A2FF /* ofxCoreImage */ = {
+			isa = PBXGroup;
+			children = (
+				E67AF5EC192272540017A2FF /* src */,
+			);
+			name = ofxCoreImage;
+			sourceTree = "<group>";
+		};
+		E67AF5EC192272540017A2FF /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E67AF5ED192272540017A2FF /* composite */,
+				E67AF616192272540017A2FF /* filters */,
+				E67AF663192272540017A2FF /* ofxCIFilter.h */,
+				E67AF664192272540017A2FF /* ofxCIFilter.mm */,
+				E67AF665192272540017A2FF /* ofxCoreImage.h */,
+				E67AF666192272540017A2FF /* ofxCoreImage.mm */,
+				E67AF667192272540017A2FF /* transitions */,
+			);
+			name = src;
+			path = ../../../addons/ofxCoreImage/src;
+			sourceTree = "<group>";
+		};
+		E67AF5ED192272540017A2FF /* composite */ = {
+			isa = PBXGroup;
+			children = (
+				E67AF5EE192272540017A2FF /* ofxCIAdditionCompositing.h */,
+				E67AF5EF192272540017A2FF /* ofxCIAdditionCompositing.mm */,
+				E67AF5F0192272540017A2FF /* ofxCIColorBlendMode.h */,
+				E67AF5F1192272540017A2FF /* ofxCIColorBlendMode.mm */,
+				E67AF5F2192272540017A2FF /* ofxCIColorBurnBlendMode.h */,
+				E67AF5F3192272540017A2FF /* ofxCIColorBurnBlendMode.mm */,
+				E67AF5F4192272540017A2FF /* ofxCIColorDodgeBlendMode.h */,
+				E67AF5F5192272540017A2FF /* ofxCIColorDodgeBlendMode.mm */,
+				E67AF5F6192272540017A2FF /* ofxCIDarkenBlendMode.h */,
+				E67AF5F7192272540017A2FF /* ofxCIDarkenBlendMode.mm */,
+				E67AF5F8192272540017A2FF /* ofxCIDifferenceBlendMode.h */,
+				E67AF5F9192272540017A2FF /* ofxCIDifferenceBlendMode.mm */,
+				E67AF5FA192272540017A2FF /* ofxCIExclusionBlendMode.h */,
+				E67AF5FB192272540017A2FF /* ofxCIExclusionBlendMode.mm */,
+				E67AF5FC192272540017A2FF /* ofxCIHardLightBlendMode.h */,
+				E67AF5FD192272540017A2FF /* ofxCIHardLightBlendMode.mm */,
+				E67AF5FE192272540017A2FF /* ofxCIHueBlendMode.h */,
+				E67AF5FF192272540017A2FF /* ofxCIHueBlendMode.mm */,
+				E67AF600192272540017A2FF /* ofxCILightenBlendMode.h */,
+				E67AF601192272540017A2FF /* ofxCILightenBlendMode.mm */,
+				E67AF602192272540017A2FF /* ofxCILuminosityBlendMode.h */,
+				E67AF603192272540017A2FF /* ofxCILuminosityBlendMode.mm */,
+				E67AF604192272540017A2FF /* ofxCIMultiplyBlendMode.h */,
+				E67AF605192272540017A2FF /* ofxCIMultiplyBlendMode.mm */,
+				E67AF606192272540017A2FF /* ofxCIOverlayBlendMode.h */,
+				E67AF607192272540017A2FF /* ofxCIOverlayBlendMode.mm */,
+				E67AF608192272540017A2FF /* ofxCISaturationBlendMode.h */,
+				E67AF609192272540017A2FF /* ofxCISaturationBlendMode.mm */,
+				E67AF60A192272540017A2FF /* ofxCIScreenBlendMode.h */,
+				E67AF60B192272540017A2FF /* ofxCIScreenBlendMode.mm */,
+				E67AF60C192272540017A2FF /* ofxCISoftLightBlendMode.h */,
+				E67AF60D192272540017A2FF /* ofxCISoftLightBlendMode.mm */,
+				E67AF60E192272540017A2FF /* ofxCISourceAtopCompositing.h */,
+				E67AF60F192272540017A2FF /* ofxCISourceAtopCompositing.mm */,
+				E67AF610192272540017A2FF /* ofxCISourceInCompositing.h */,
+				E67AF611192272540017A2FF /* ofxCISourceInCompositing.mm */,
+				E67AF612192272540017A2FF /* ofxCISourceOutCompositing.h */,
+				E67AF613192272540017A2FF /* ofxCISourceOutCompositing.mm */,
+				E67AF614192272540017A2FF /* ofxCISourceOverCompositing.h */,
+				E67AF615192272540017A2FF /* ofxCISourceOverCompositing.mm */,
+			);
+			path = composite;
+			sourceTree = "<group>";
+		};
+		E67AF616192272540017A2FF /* filters */ = {
+			isa = PBXGroup;
+			children = (
+				E67AF617192272540017A2FF /* ofxCIBloom.h */,
+				E67AF618192272540017A2FF /* ofxCIBloom.mm */,
+				E67AF619192272540017A2FF /* ofxCIBlur.h */,
+				E67AF61A192272540017A2FF /* ofxCIBlur.mm */,
+				E67AF61B192272540017A2FF /* ofxCIBoxBlur.h */,
+				E67AF61C192272540017A2FF /* ofxCIBoxBlur.mm */,
+				E67AF61D192272540017A2FF /* ofxCIBumpDistortion.h */,
+				E67AF61E192272540017A2FF /* ofxCIBumpDistortion.mm */,
+				E67AF61F192272540017A2FF /* ofxCIBumpDistortionLinear.h */,
+				E67AF620192272540017A2FF /* ofxCIBumpDistortionLinear.mm */,
+				E67AF621192272540017A2FF /* ofxCICircleSplashDistortion.h */,
+				E67AF622192272540017A2FF /* ofxCICircleSplashDistortion.mm */,
+				E67AF623192272540017A2FF /* ofxCICircularScreen.h */,
+				E67AF624192272540017A2FF /* ofxCICircularScreen.mm */,
+				E67AF625192272540017A2FF /* ofxCICircularWrapDistortion.h */,
+				E67AF626192272540017A2FF /* ofxCICircularWrapDistortion.mm */,
+				E67AF627192272540017A2FF /* ofxCIColorControls.h */,
+				E67AF628192272540017A2FF /* ofxCIColorControls.mm */,
+				E67AF629192272540017A2FF /* ofxCIColorInvert.h */,
+				E67AF62A192272540017A2FF /* ofxCIColorInvert.mm */,
+				E67AF62B192272540017A2FF /* ofxCIColorMonochrome.h */,
+				E67AF62C192272540017A2FF /* ofxCIColorMonochrome.mm */,
+				E67AF62D192272540017A2FF /* ofxCIColorPosterize.h */,
+				E67AF62E192272540017A2FF /* ofxCIColorPosterize.mm */,
+				E67AF62F192272540017A2FF /* ofxCICrop.h */,
+				E67AF630192272540017A2FF /* ofxCICrop.mm */,
+				E67AF631192272540017A2FF /* ofxCICrystallize.h */,
+				E67AF632192272540017A2FF /* ofxCICrystallize.mm */,
+				E67AF633192272540017A2FF /* ofxCIDroste.h */,
+				E67AF634192272540017A2FF /* ofxCIDroste.mm */,
+				E67AF635192272540017A2FF /* ofxCIEdges.h */,
+				E67AF636192272540017A2FF /* ofxCIEdges.mm */,
+				E67AF637192272540017A2FF /* ofxCIEdgeWork.h */,
+				E67AF638192272540017A2FF /* ofxCIEdgeWork.mm */,
+				E67AF639192272540017A2FF /* ofxCIExposureAdjust.h */,
+				E67AF63A192272540017A2FF /* ofxCIExposureAdjust.mm */,
+				E67AF63B192272540017A2FF /* ofxCIFalseColor.h */,
+				E67AF63C192272540017A2FF /* ofxCIFalseColor.mm */,
+				E67AF63D192272540017A2FF /* ofxCIGammaAdjust.h */,
+				E67AF63E192272540017A2FF /* ofxCIGammaAdjust.mm */,
+				E67AF63F192272540017A2FF /* ofxCIGlassDistortion.h */,
+				E67AF640192272540017A2FF /* ofxCIGlassDistortion.mm */,
+				E67AF641192272540017A2FF /* ofxCIGlassLozenge.h */,
+				E67AF642192272540017A2FF /* ofxCIGlassLozenge.mm */,
+				E67AF643192272540017A2FF /* ofxCIGloom.h */,
+				E67AF644192272540017A2FF /* ofxCIGloom.mm */,
+				E67AF645192272540017A2FF /* ofxCIHexagonalPixellate.h */,
+				E67AF646192272540017A2FF /* ofxCIHexagonalPixellate.mm */,
+				E67AF647192272540017A2FF /* ofxCIHoleDistortion.h */,
+				E67AF648192272540017A2FF /* ofxCIHoleDistortion.mm */,
+				E67AF649192272540017A2FF /* ofxCIHue.h */,
+				E67AF64A192272540017A2FF /* ofxCIHue.mm */,
+				E67AF64B192272540017A2FF /* ofxCIKaleidoscope.h */,
+				E67AF64C192272540017A2FF /* ofxCIKaleidoscope.mm */,
+				E67AF64D192272540017A2FF /* ofxCILineScreen.h */,
+				E67AF64E192272540017A2FF /* ofxCILineScreen.mm */,
+				E67AF64F192272540017A2FF /* ofxCIMotionBlur.h */,
+				E67AF650192272540017A2FF /* ofxCIMotionBlur.mm */,
+				E67AF651192272540017A2FF /* ofxCIOpTile.h */,
+				E67AF652192272540017A2FF /* ofxCIOpTile.mm */,
+				E67AF653192272540017A2FF /* ofxCIPinchDistortion.h */,
+				E67AF654192272540017A2FF /* ofxCIPinchDistortion.mm */,
+				E67AF655192272540017A2FF /* ofxCIPixellate.h */,
+				E67AF656192272540017A2FF /* ofxCIPixellate.mm */,
+				E67AF657192272540017A2FF /* ofxCIPointillize.h */,
+				E67AF658192272540017A2FF /* ofxCIPointillize.mm */,
+				E67AF659192272540017A2FF /* ofxCIToneCurve.h */,
+				E67AF65A192272540017A2FF /* ofxCIToneCurve.mm */,
+				E67AF65B192272540017A2FF /* ofxCITorusLensDistortion.h */,
+				E67AF65C192272540017A2FF /* ofxCITorusLensDistortion.mm */,
+				E67AF65D192272540017A2FF /* ofxCITwirlDistortion.h */,
+				E67AF65E192272540017A2FF /* ofxCITwirlDistortion.mm */,
+				E67AF65F192272540017A2FF /* ofxCIVortexDistortion.h */,
+				E67AF660192272540017A2FF /* ofxCIVortexDistortion.mm */,
+				E67AF661192272540017A2FF /* ofxCIZoomBlur.h */,
+				E67AF662192272540017A2FF /* ofxCIZoomBlur.mm */,
+			);
+			path = filters;
+			sourceTree = "<group>";
+		};
+		E67AF667192272540017A2FF /* transitions */ = {
+			isa = PBXGroup;
+			children = (
+				E67AF668192272540017A2FF /* ofxCIBarsSwipeTransition.h */,
+				E67AF669192272540017A2FF /* ofxCIBarsSwipeTransition.mm */,
+				E67AF66A192272540017A2FF /* ofxCICopyMachineTransition.h */,
+				E67AF66B192272540017A2FF /* ofxCICopyMachineTransition.mm */,
+				E67AF66C192272540017A2FF /* ofxCIDissolveTransition.h */,
+				E67AF66D192272540017A2FF /* ofxCIDissolveTransition.mm */,
+				E67AF66E192272540017A2FF /* ofxCIRippleTransition.h */,
+				E67AF66F192272540017A2FF /* ofxCIRippleTransition.mm */,
+			);
+			path = transitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,8 +722,86 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E67AF67D192272540017A2FF /* ofxCISaturationBlendMode.mm in Sources */,
+				E67AF683192272540017A2FF /* ofxCISourceOverCompositing.mm in Sources */,
+				E67AF6AA192272540017A2FF /* ofxCIFilter.mm in Sources */,
+				E67AF694192272540017A2FF /* ofxCIEdgeWork.mm in Sources */,
+				E66A7D551923F18900E337CB /* drawAlphas.cpp in Sources */,
+				E67AF691192272540017A2FF /* ofxCICrystallize.mm in Sources */,
+				E610763519229A5600ADB96C /* drawPoints.cpp in Sources */,
+				E67AF677192272540017A2FF /* ofxCIHardLightBlendMode.mm in Sources */,
+				E67AF69C192272540017A2FF /* ofxCIHoleDistortion.mm in Sources */,
+				E67AF68A192272540017A2FF /* ofxCICircularScreen.mm in Sources */,
+				E67AF6AB192272540017A2FF /* ofxCoreImage.mm in Sources */,
+				E67AF673192272540017A2FF /* ofxCIColorDodgeBlendMode.mm in Sources */,
+				E67AF682192272540017A2FF /* ofxCISourceOutCompositing.mm in Sources */,
+				E67AF679192272540017A2FF /* ofxCILightenBlendMode.mm in Sources */,
+				E67AF69A192272540017A2FF /* ofxCIGloom.mm in Sources */,
+				E67AF68F192272540017A2FF /* ofxCIColorPosterize.mm in Sources */,
+				E66A7D4F1923ECD700E337CB /* drawCircles.cpp in Sources */,
+				E67AF678192272540017A2FF /* ofxCIHueBlendMode.mm in Sources */,
+				E67AF67F192272540017A2FF /* ofxCISoftLightBlendMode.mm in Sources */,
+				E67AF69D192272540017A2FF /* ofxCIHue.mm in Sources */,
+				E67AF67B192272540017A2FF /* ofxCIMultiplyBlendMode.mm in Sources */,
+				E67AF69B192272540017A2FF /* ofxCIHexagonalPixellate.mm in Sources */,
+				E67AF6A7192272540017A2FF /* ofxCITwirlDistortion.mm in Sources */,
+				E67AF676192272540017A2FF /* ofxCIExclusionBlendMode.mm in Sources */,
+				E67AF68D192272540017A2FF /* ofxCIColorInvert.mm in Sources */,
+				E61076311922958000ADB96C /* drawCube.cpp in Sources */,
+				E67AF685192272540017A2FF /* ofxCIBlur.mm in Sources */,
+				E67AF684192272540017A2FF /* ofxCIBloom.mm in Sources */,
+				E67AF687192272540017A2FF /* ofxCIBumpDistortion.mm in Sources */,
+				E67AF6AC192272540017A2FF /* ofxCIBarsSwipeTransition.mm in Sources */,
+				E67AF690192272540017A2FF /* ofxCICrop.mm in Sources */,
+				E67AF69F192272540017A2FF /* ofxCILineScreen.mm in Sources */,
+				E67AF6AF192272540017A2FF /* ofxCIRippleTransition.mm in Sources */,
+				E67AF699192272540017A2FF /* ofxCIGlassLozenge.mm in Sources */,
+				E67AF6A4192272540017A2FF /* ofxCIPointillize.mm in Sources */,
+				E67AF688192272540017A2FF /* ofxCIBumpDistortionLinear.mm in Sources */,
+				E67AF675192272540017A2FF /* ofxCIDifferenceBlendMode.mm in Sources */,
+				E610763819229FC800ADB96C /* drawLines.cpp in Sources */,
+				E67AF6A0192272540017A2FF /* ofxCIMotionBlur.mm in Sources */,
+				E66A7D581923F3F800E337CB /* drawSpheres.cpp in Sources */,
+				E610763B1922A20F00ADB96C /* drawPent.cpp in Sources */,
+				E67AF695192272540017A2FF /* ofxCIExposureAdjust.mm in Sources */,
+				E67AF69E192272540017A2FF /* ofxCIKaleidoscope.mm in Sources */,
+				E66A7D521923EFAA00E337CB /* drawSquares.cpp in Sources */,
+				E67AF6A6192272540017A2FF /* ofxCITorusLensDistortion.mm in Sources */,
+				E67AF696192272540017A2FF /* ofxCIFalseColor.mm in Sources */,
+				E66A7D5B1923F59600E337CB /* drawDiamonds.cpp in Sources */,
+				E610762E19228E3F00ADB96C /* drawLogo.cpp in Sources */,
+				E67AF671192272540017A2FF /* ofxCIColorBlendMode.mm in Sources */,
+				E67AF67C192272540017A2FF /* ofxCIOverlayBlendMode.mm in Sources */,
+				E67AF67A192272540017A2FF /* ofxCILuminosityBlendMode.mm in Sources */,
+				E67AF681192272540017A2FF /* ofxCISourceInCompositing.mm in Sources */,
+				E610763E1922A3B000ADB96C /* drawBlurryOrbs.cpp in Sources */,
+				E67AF693192272540017A2FF /* ofxCIEdges.mm in Sources */,
+				E67AF689192272540017A2FF /* ofxCICircleSplashDistortion.mm in Sources */,
+				E67AF68B192272540017A2FF /* ofxCICircularWrapDistortion.mm in Sources */,
+				E66A7D4C1923EA9B00E337CB /* drawTriangles.cpp in Sources */,
+				E67AF697192272540017A2FF /* ofxCIGammaAdjust.mm in Sources */,
+				E67AF6A2192272540017A2FF /* ofxCIPinchDistortion.mm in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				E67AF698192272540017A2FF /* ofxCIGlassDistortion.mm in Sources */,
+				E67AF680192272540017A2FF /* ofxCISourceAtopCompositing.mm in Sources */,
+				E67AF68E192272540017A2FF /* ofxCIColorMonochrome.mm in Sources */,
+				E67AF6A3192272540017A2FF /* ofxCIPixellate.mm in Sources */,
+				E66A7D491923E9A300E337CB /* drawSpirals.cpp in Sources */,
+				E67AF686192272540017A2FF /* ofxCIBoxBlur.mm in Sources */,
+				E67AF6AE192272540017A2FF /* ofxCIDissolveTransition.mm in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */,
+				E67AF672192272540017A2FF /* ofxCIColorBurnBlendMode.mm in Sources */,
+				E67AF6A9192272540017A2FF /* ofxCIZoomBlur.mm in Sources */,
+				E67AF670192272540017A2FF /* ofxCIAdditionCompositing.mm in Sources */,
+				E67AF674192272540017A2FF /* ofxCIDarkenBlendMode.mm in Sources */,
+				E61076411922A73300ADB96C /* drawBars.cpp in Sources */,
+				E67AF6AD192272540017A2FF /* ofxCICopyMachineTransition.mm in Sources */,
+				E67AF6A1192272540017A2FF /* ofxCIOpTile.mm in Sources */,
+				E67AF692192272540017A2FF /* ofxCIDroste.mm in Sources */,
+				E67AF6A8192272540017A2FF /* ofxCIVortexDistortion.mm in Sources */,
+				E67AF6A5192272540017A2FF /* ofxCIToneCurve.mm in Sources */,
+				E67AF68C192272540017A2FF /* ofxCIColorControls.mm in Sources */,
+				E67AF67E192272540017A2FF /* ofxCIScreenBlendMode.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +959,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_52)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -531,6 +1045,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
