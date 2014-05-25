@@ -277,7 +277,12 @@ void testApp::keyPressed(int key){
     counter == 12 ? diamonds.diamondsOn = true : diamonds.diamondsOn = false;
     
     
+    if (key == '`' ) {
+        setup();
+    }
+    
     if (key == 'r') { ///KILL ALL///
+        
         logo.logoAlpha = 0;
         cube.rotate = 0;
         cube.alphaTrigger = 0;
@@ -312,8 +317,7 @@ void testApp::keyPressed(int key){
         spheres.sphereNoise = 0;
         diamonds.rotateDiamonds = 0;
         diamonds.counterDiamonds = 0;
-        diamonds.sineDiamonds = 0;
-        
+        diamonds.sineDiamonds = 0;        
     }
     
 }
@@ -367,7 +371,7 @@ void testApp::dragEvent(ofDragInfo dragInfo){
 
 }
 
-void testApp::setupFilters() {
+/*void testApp::setupFilters() {
     coreBase.setup();
     bloomFilter.setup(ofGetWidth(), ofGetHeight(), coreBase.glCIcontext);
-}
+}*/

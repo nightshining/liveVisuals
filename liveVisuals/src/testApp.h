@@ -4,7 +4,7 @@
 ////VISUAL SOFTWARE FOR CITYGIRL PERFORMANCE////
 
 #include "ofMain.h"
-#include "ofxCoreImage.h"
+//#include "ofxCoreImage.h"
 #include "drawLogo.h"
 #include "drawCube.h"
 #include "drawPoints.h"
@@ -54,9 +54,11 @@ class testApp : public ofBaseApp{
 	//Cycle through visuals//
     int counter;
     
-    //Core Image//
+    /*
+     //Core Image//
     void setupFilters();
     ofxCI coreBase;
     ofxCIBloom bloomFilter;
     ofFbo sourceFbo;
+     */
 };
