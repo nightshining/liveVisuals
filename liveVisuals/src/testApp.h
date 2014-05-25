@@ -54,6 +54,8 @@ class testApp : public ofBaseApp{
 	//Cycle through visuals//
     int counter;
     
+    ofFbo fbo, fboFloat;
+    
     /*
      //Core Image//
     void setupFilters();

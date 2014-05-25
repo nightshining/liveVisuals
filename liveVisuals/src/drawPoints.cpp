@@ -14,6 +14,11 @@ void drawPoints::setup() {
     //Points vid and bool
     vid1.loadMovie("1.mov");
     pointsOn = false;
+    fbo.allocate(ofGetWidth(), ofGetHeight(), GL_RGBA);
+    fbo.begin();
+	ofClear(255,255,255, 0);
+    fbo.end();
+    
 }
 
 void drawPoints::update() {
@@ -27,7 +32,8 @@ void drawPoints::update() {
 }
 
 void drawPoints::draw() {
-    
+    fbo.begin();
+    ofClear(255);
     vid1.play();
     vid1.setSpeed(1.0);
     
@@ -54,5 +60,9 @@ void drawPoints::draw() {
             
         }
     }
+    fbo.end();
+
+    fbo.draw(0, 0);
+    
 }
 

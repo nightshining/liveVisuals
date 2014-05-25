@@ -10,6 +10,24 @@ void testApp::setup(){
     ofEnableSmoothing();
     ofSetFrameRate(60);
     
+    //setup fbo
+    fbo.allocate(ofGetWidth(), ofGetHeight(), GL_RGBA);
+    
+#ifdef TARGET_OPENGLES
+	fboFloat.allocate(ofGetWidth(), ofGetHeight(), GL_RGBA ); // with alpha, 32 bits red, 32 bits green, 32 bits blue, 32 bits alpha, from 0 to 1 in 'infinite' steps
+    ofLogWarning("testApp") << "GL_RGBA32F_ARB is not available for OPENGLES.  Using RGBA.";	
+#else
+    fboFloat.allocate(ofGetWidth(), ofGetHeight(), GL_RGBA32F_ARB); // with alpha, 32 bits red, 32 bits green, 32 bits blue, 32 bits alpha, from 0 to 1 in 'infinite' steps
+#endif
+    
+    fbo.begin();
+	ofClear(255,255,255, 0);
+    fbo.end();
+	
+	fboFloat.begin();
+	ofClear(255,255,255, 0);
+    fboFloat.end();
+    
     ////Core Image//////
    // sourceFbo.allocate(ofGetWidth(), ofGetHeight(), GL_RGBA32F_ARB); //32-bit framebuffer for smoothness
    // sourceFbo.begin();
@@ -44,6 +62,8 @@ void testApp::setup(){
 //--------------------------------------------------------------
 void testApp::update(){
     
+    fbo.begin();
+    ofClear(255);
     if (logo.logoOn == true) {
         logo.update();
     }
@@ -99,13 +119,15 @@ void testApp::update(){
     if (diamonds.diamondsOn == true) {
         diamonds.update();
     }
+    fbo.end();
+    
+    cout << "Frame Rate: " << ofGetFrameRate() << endl;
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
     
-   // sourceFbo.begin();
-   // ofClear(0);
+   
     
     if(cube.cubeOn == true){
     cube.draw(cube.alphaTrigger);
@@ -169,9 +191,11 @@ void testApp::draw(){
     if (diamonds.diamondsOn == true) {
         diamonds.draw();
     }    
-   // sourceFbo.end();
+   
+   fbo.draw(0, 0);
+   
     
-   // bloomFilter.update(sourceFbo.getTextureReference());
+    // bloomFilter.update(sourceFbo.getTextureReference());
    // bloomFilter.setIntensity(ofMap(mouseX,0,ofGetWidth(),0,1));
    // bloomFilter.draw(0,0);
     

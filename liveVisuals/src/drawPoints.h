@@ -20,5 +20,6 @@ public:
     float pointsGreen, pointsCounter;
     float pointsRed, pointsCounter2;
     ofVideoPlayer vid1;
+    ofFbo fbo;
     
 };
