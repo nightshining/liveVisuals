@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CF4ADF919337E36006055C9 /* drawTunnel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CF4ADF819337E36006055C9 /* drawTunnel.cpp */; };
+		5CF4ADFD1933B319006055C9 /* drawNumbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CF4ADFC1933B319006055C9 /* drawNumbers.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -74,6 +76,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5CF4ADF819337E36006055C9 /* drawTunnel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawTunnel.cpp; sourceTree = "<group>"; };
+		5CF4ADFB19337E48006055C9 /* drawTunnel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawTunnel.h; sourceTree = "<group>"; };
+		5CF4ADFC1933B319006055C9 /* drawNumbers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawNumbers.cpp; sourceTree = "<group>"; };
+		5CF4ADFE1933B334006055C9 /* drawNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawNumbers.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -257,6 +263,10 @@
 				E66A7D571923F3F800E337CB /* drawSpheres.h */,
 				E66A7D591923F59600E337CB /* drawDiamonds.cpp */,
 				E66A7D5A1923F59600E337CB /* drawDiamonds.h */,
+				5CF4ADF819337E36006055C9 /* drawTunnel.cpp */,
+				5CF4ADFB19337E48006055C9 /* drawTunnel.h */,
+				5CF4ADFC1933B319006055C9 /* drawNumbers.cpp */,
+				5CF4ADFE1933B334006055C9 /* drawNumbers.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -373,6 +383,8 @@
 				E66A7D491923E9A300E337CB /* drawSpirals.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */,
 				E61076411922A73300ADB96C /* drawBars.cpp in Sources */,
+				5CF4ADF919337E36006055C9 /* drawTunnel.cpp in Sources */,
+				5CF4ADFD1933B319006055C9 /* drawNumbers.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

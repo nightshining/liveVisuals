@@ -19,6 +19,8 @@
 #include "drawAlphas.h"
 #include "drawSpheres.h"
 #include "drawDiamonds.h"
+#include "drawTunnel.h"
+#include "drawNumbers.h"
 
 class testApp : public ofBaseApp{
 
@@ -50,6 +52,8 @@ class testApp : public ofBaseApp{
     drawAlphas alphas;
     drawSpheres spheres;
     drawDiamonds diamonds;
+    drawTunnel tunnel;
+    drawNumbers numbers;
     
 	//Cycle through visuals//
     int counter;

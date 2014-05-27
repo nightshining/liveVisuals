@@ -4,7 +4,7 @@
 //--------------------------------------------------------------
 void testApp::setup(){
 
-    ofSetFullscreen(false);
+    ofSetFullscreen(true);
     ofBackground(0);
     ofSetVerticalSync(true);
     ofEnableSmoothing();
@@ -53,6 +53,8 @@ void testApp::setup(){
     alphas.setup();
     spheres.setup();
     diamonds.setup();
+    tunnel.setup();
+    numbers.setup();
     
     //Key Counter
     counter = -1; 
@@ -119,9 +121,19 @@ void testApp::update(){
     if (diamonds.diamondsOn == true) {
         diamonds.update();
     }
+    
+    if (tunnel.tunnelOn == true) {
+        tunnel.update();
+    }
+    
+    if (numbers.numbersOn == true) {
+        numbers.update();
+    }
+    
+    
     fbo.end();
     
-    cout << "Frame Rate: " << ofGetFrameRate() << endl;
+    //cout << "Frame Rate: " << ofGetFrameRate() << endl;
 }
 
 //--------------------------------------------------------------
@@ -192,6 +204,12 @@ void testApp::draw(){
         diamonds.draw();
     }    
    
+    if (tunnel.tunnelOn == true) {
+        tunnel.draw();
+    }
+    if (numbers.numbersOn == true) {
+        numbers.draw();
+    }
    fbo.draw(0, 0);
    
     
@@ -300,6 +318,11 @@ void testApp::keyPressed(int key){
     //Turn DIAMONDS on
     counter == 12 ? diamonds.diamondsOn = true : diamonds.diamondsOn = false;
     
+    //Turn TUNNEL on
+    counter == 13 ? tunnel.tunnelOn = true : tunnel.tunnelOn = false;
+    tunnel.changeDirection(key);
+
+    counter == 14 ? numbers.numbersOn = true : numbers.numbersOn = false;
     
     if (key == '`' ) {
         setup();
@@ -341,7 +364,10 @@ void testApp::keyPressed(int key){
         spheres.sphereNoise = 0;
         diamonds.rotateDiamonds = 0;
         diamonds.counterDiamonds = 0;
-        diamonds.sineDiamonds = 0;        
+        diamonds.sineDiamonds = 0;   
+        tunnel.controlSpeed = 0;
+        tunnel.rotateX = 0;
+        tunnel.rotateY = 0;
     }
     
 }
